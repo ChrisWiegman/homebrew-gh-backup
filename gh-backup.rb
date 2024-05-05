@@ -5,21 +5,21 @@
 class GhBackup < Formula
   desc "A simple CLI utility, written in GoLang, to backup all of your public GitHub repos."
   homepage "https://github.com/ChrisWiegman/gh-backup"
-  version "1.0.3"
+  version "1.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ChrisWiegman/gh-backup/releases/download/1.0.3/gh-backup_macos_x86_64.zip"
-      sha256 "a55919bc041f451a3960b1eea74b4b5162c7a503ff34f78ef620fabf9bb6a6ab"
+      url "https://github.com/ChrisWiegman/gh-backup/releases/download/1.0.4/gh-backup_macos_x86_64.zip"
+      sha256 "8beda254c9b144dad50dc955e97f8d2ef3d104b95e28c5681f4a89234a021d04"
 
       def install
         bin.install "gh-backup"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ChrisWiegman/gh-backup/releases/download/1.0.3/gh-backup_macos_arm64.zip"
-      sha256 "6c074cd47ebf1c89bbee3b9eda31b76aa38b0e0d5d242d9a7934ee455ec0be04"
+      url "https://github.com/ChrisWiegman/gh-backup/releases/download/1.0.4/gh-backup_macos_arm64.zip"
+      sha256 "97c8b3480beaeac973702f3434c2175d04bcbe18a501a3ac24024be6985316d5"
 
       def install
         bin.install "gh-backup"
@@ -29,8 +29,8 @@ class GhBackup < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/ChrisWiegman/gh-backup/releases/download/1.0.3/gh-backup_linux_x86_64.zip"
-      sha256 "99c9cdf6832043c6ccad8a5f9244f023ac0a1d0b77bb88a8bfaf1fb2eba47b14"
+      url "https://github.com/ChrisWiegman/gh-backup/releases/download/1.0.4/gh-backup_linux_x86_64.zip"
+      sha256 "79bd0483c93b7ca9f59d6c5d0e3d95ac9273ce6564d0edda56dd40ec18692f49"
 
       def install
         bin.install "gh-backup"
